@@ -1,0 +1,12 @@
+{
+  "name": "xrpl-hookon-calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Transia-RnD/xrpl-hookon-calculator.git",
+  "author": "dangell7 <denisangell7@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.4",
+    "typescript": "4.4.4"
+  }
+}
