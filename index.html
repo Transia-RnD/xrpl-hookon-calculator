@@ -6,7 +6,7 @@
 <body>
     <center>
         <div id="error"></div>
-        <textarea id="hookon" onchange="recalc()" style="width: 22em; height: 3em; font-size: 2em; text-align: center;">0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbfffff</textarea>
+        <textarea id="hookon" onchange="recalc()" style="width: 22em; height: 3em; font-size: 2em; text-align: center;">0x0000000000000000000000000000000000000000000000000000000000000000</textarea>
         <br />
     <script>
     const tts = {
@@ -16,9 +16,11 @@
         ttACCOUNT_SET: 3,
         ttESCROW_CANCEL: 4,
         ttREGULAR_KEY_SET: 5,
+        // ttNICKNAME_SET: 6, // deprecated
         ttOFFER_CREATE: 7,
         ttOFFER_CANCEL: 8,
         ttTICKET_CREATE: 10,
+        // ttSPINAL_TAP: 11, // deprecated
         ttSIGNER_LIST_SET: 12,
         ttPAYCHAN_CREATE: 13,
         ttPAYCHAN_FUND: 14,
@@ -30,14 +32,25 @@
         ttTRUST_SET: 20,
         ttACCOUNT_DELETE: 21,
         ttHOOK_SET: 22,
-
+        ttNFTOKEN_MINT: 25,
+        ttNFTOKEN_BURN: 26,
+        ttNFTOKEN_CREATE_OFFER: 27,
+        ttNFTOKEN_CANCEL_OFFER: 28,
+        ttNFTOKEN_ACCEPT_OFFER: 29,
         ttURITOKEN_MINT: 45,
         ttURITOKEN_BURN: 46,
         ttURITOKEN_BUY: 47,
         ttURITOKEN_CREATE_SELL_OFFER: 48,
         ttURITOKEN_CANCEL_SELL_OFFER: 49,
-
-        ttINVOKE: 99
+        ttGENESIS_MINT: 96,
+        ttIMPORT: 97,
+        ttCLAIM_REWARD: 98,
+        ttINVOKE: 99,
+        // ttAMENDMENT: 100,
+        // ttFEE: 101,
+        // ttUNL_MODIFY: 102,
+        // ttEMIT_FAILURE: 103,
+        // ttUNL_REPORT: 104,
 
     };
 
